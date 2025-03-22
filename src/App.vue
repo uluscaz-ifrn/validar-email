@@ -3,7 +3,6 @@ import Validar from './views/Validar.vue'
 </script>
 
 <template>
-  <Validator></Validator>
   <Validar />
 </template>
 
