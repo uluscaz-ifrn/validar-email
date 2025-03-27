@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import axios from 'axios'
 import { ref } from 'vue'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
 const email = ref('')
 const apiResponse = ref<Record<string, any> | null>(null)
 const loading = ref(false)
@@ -28,14 +29,13 @@ async function validar() {
 <template>
   <div class="container">
     <h2>Valide e verifique um endereço de e-mail.</h2>
-    <input type="text" v-model="email" placeholder="Digite seu e-mail" />
+    <input type="text" class="form-control" v-model="email" placeholder="Digite seu e-mail" />
     <button @click="validar" :disabled="!email || loading">
       {{ loading ? 'Validando...' : 'Validar' }}
     </button>
-
     <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
 
-    <table v-if="apiResponse" class="result-table">
+    <table v-if="apiResponse" class="table table-striped">
       <thead>
         <tr>
           <th>E-mail Consultado</th>
@@ -88,22 +88,5 @@ button:disabled {
 .error {
   color: red;
   margin-top: 10px;
-}
-
-.result-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-.result-table th,
-.result-table td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: center;
-}
-
-.result-table th {
-  background-color: #085c8d;
 }
 </style>
