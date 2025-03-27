@@ -5,6 +5,7 @@ Este projeto em Vue 3 que permite a validação de endereços de e-mail utilizan
 ## 🚀 Tecnologias Utilizadas
 - Vue 3
 - TypeScript
+- Bootstrap
 - Axios
 
 ## 📦 Instalação
