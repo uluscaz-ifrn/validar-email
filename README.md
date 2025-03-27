@@ -1,39 +1,39 @@
-# email-validator
+# Validador de E-mails
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto em Vue 3 que permite a validação de endereços de e-mail utilizando a API do [Disify](https://disify.com/).
 
-## Recommended IDE Setup
+## 🚀 Tecnologias Utilizadas
+- Vue 3
+- TypeScript
+- Axios
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 📦 Instalação
 
-## Type Support for `.vue` Imports in TS
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+2. Instale as dependências:
+   ```sh
+   npm install
+   ```
 
-## Customize configuration
+## ▶️ Como Usar
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. Execute o projeto:
+   ```sh
+   npm run dev
+   ```
+2. Acesse `http://localhost:5173/` no seu navegador (o número da porta pode variar).
+3. Digite um e-mail no campo de entrada e clique no botão "Validar" para verificar a autenticidade do endereço de e-mail.
 
-## Project Setup
+## 📜 Estrutura do Projeto
 
-```sh
-npm install
-```
+- `Validar.vue`: Componente principal contendo o formulário de validação e a lógica de requisição para a API.
 
-### Compile and Hot-Reload for Development
+## 📄 Licença
 
-```sh
-npm run dev
-```
+Este projeto está sob a licença MIT. Sinta-se livre para modificá-lo e distribuí-lo conforme necessário.
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
