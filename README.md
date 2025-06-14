@@ -1,6 +1,7 @@
 # Validador de E-mails
 
 Este projeto em Vue 3 que permite a validação de endereços de e-mail utilizando a API do [Disify](https://disify.com/).
+[Acessar projeto](https://validar-email-theta.vercel.app/)
 
 ## 🚀 Tecnologias Utilizadas
 - Vue 3
